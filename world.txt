@@ -1,0 +1,15 @@
+Task 1- SELECT COUNT(District="USA") FROM city;
+Task 2- SELECT Code, Population, LifeExpectancy
+    -> FROM country
+    -> WHERE Code="ARG";
+TASK 3-SELECT MAX(LifeExpectancy) FROM country;
+TASK 4- SELECT o.Code=653, c.ID=653, c.Name FROM city c JOIN country o ON o.Code=c.ID;
+TASK 5- 
+TASK 6-SELECT Name FROM city WHERE LEFT(Name,1) IN ('F');
+TASK 7-SELECT COUNT(District='China') FROM city;
+TASK 8- SELECT population
+    -> FROM country
+    -> WHERE population = ( select min(population) from country where population <> 0)
+    -> ;
+TASK 9-
+
