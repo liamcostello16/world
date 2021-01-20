@@ -1,0 +1,28 @@
+task1 - SELECT first_name, last_name FROM actor;
+task2 - SELECT last_name FROM actor WHERE first_name='John';
+task3 - SELECT first_name, last_name FROM actor WHERE last_name='Neeson';
+task4 - SELECT first_name, last_name FROM actor where (actor_id % 10) = 0;
+task5 - SELECT description FROM film WHERE film_ID=100;
+task6 - SELECT title FROM film WHERE rating='R';
+task7- SELECT title FROM film WHERE rating!='R';
+task8-SELECT title, MIN(length)
+    -> FROM film
+    -> GROUP BY title
+    -> limit 10;
+task9-SELECT title FROM film WHERE length = (SELECT MAX(length) FROM film);
+task10-SELECT title FROM film WHERE special_features='Deleted Scenes';
+task11-SELECT DISTINCT last_name FROM actor ORDER BY last_name DESC;
+task12-SELECT last_name FROM actor ORDER BY last_name ASC;
+task13-
+task14-SELECT release_year FROM film WHERE title='Academy Dinosaur';
+task15-SELECT AVG(length) FROM film;
+task-16
+task-17
+task18-SELECT title FROM film WHERE release_year=2010;
+task19-
+task20-SELECT first_name, last_name FROM staff WHERE staff_id=2;
+task21-
+task22-SELECT DISTINCT country FROM country;
+task23-
+task24-
+task25-SELECT special_features FROM film WHERE (SELECT MAX(film_id) FROM film);
